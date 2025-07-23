@@ -3,47 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
-<body>
-  <header>
-<img src="../images/logo-cg.png" alt="logocg">
-<nav>
-<ul>
-<li> <a class="menu" href="../index.html">Inicio</a> </li>
-<li> <a class="menu" href="sobre-mi.html">Sobre mi</a></li>
-<li> <a class="menu" href="servicios.html"">Servicios</a></li>
-<li> <a class="menu" href="asesoria legal on line">Asesoria-online</a></li></ul>
-</nav>
-  </header> 
-  
- <main>
-<h1>Contacto</h1>
-<h2>¿Necesitás asesoría legal o querés agendar una consulta?</h2>
-<p>Podés comunicarte de la manera que te resulte más cómoda: </p>
-<ul>
-<li>- Correo electrónico: carola_g_15@hotmail.com.- </li>
-<li>- WhatsApp / Teléfono:+54 9-3825-416367.-</li>
-<li>- Dirección de Estudio : El Maestro N° 507 - Chilecito- La Rioja.-</li>
+  <body class="body-contacto">
+    <header>
+      <img class="logo-header" src="../images/logo-cg.png" alt="logocg" />
+      <nav class="navbar navbar-expand-lg nav-container">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler boton-background"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ul-nav-container">
+              <li class="nav-item">
+                <a
+                  class="nav-link enlaces-header enlace-header-inicio"
+                  href="../index.html"
+                  >Mi Sitio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlaces-header" href="sobre-mi.html"
+                  >Sobre mi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlaces-header" href="servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlaces-header" href="asesoria-online.html"
+                  >Asesoria Online</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link enlaces-header" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-</ul>
-
-<p>Horarios de atención: Lunes a Viernes de 9 a 20 hs Consultas virtuales.-</p>
-<P>Horarios de atención: Lunes a Viernes de 18 a 21 hs Consultas presenciales.-</P>
-<img src="../images/4.jpg" alt="balana justicia y libros">
+<main class="main-contacto">
+  <h1 class="h1-contacto">Contacto</h1>
+  <h2 class="h2-contacto">¿Necesitás asesoría legal o querés agendar una consulta?</h2>
+  <div class="parrafo-lista-contacto">
+    <p>Podés comunicarte de la manera que te resulte más cómoda: </p>
+    <ul>
+    <li><b>- Correo electrónico:</b> carola_g_15@hotmail.com.- </li>
+    <li><b>- WhatsApp / Teléfono:</b>+54 9-3825-416367.-</li>
+    <li><b>- Dirección de Estudio:</b> El Maestro N° 507 - Chilecito- La Rioja.-</li>
+    </li>
+    </ul>
+  </div>  
+  <div class="horario-contacto">
+      <p class="horario-1"> <b>- Horarios de atención:</b> Lunes a Viernes de 9 a 20 hs <b>Consultas Virtuales</b></p> 
+      <p class="horario-2"> <b>- Horarios de atención:</b> Lunes a Viernes de 18 a 21 hs <b>Consultas Presenciales</b></p>
+      <img class="img-contacto"src="../images/4.jpg" alt="balanza justicia y libros">
+  </div>
 </main>
 
-      
- 
- <footer>
-<img src="../images/logo-cg.png" alt="logocg">
-<p><b>Contacto:</b></p>
-<ul>
-    <li> <img src="../images/logo-direccion.jpg" alt="logodireccion">El Maestro N° 507</li>
-    <li> <img src="../images/logo-llamada.jpg" alt="logollamada">3825-416367</li>
-    <li> <img src="../images/logo-correo.jpg" alt="logo-correo">carola_g_15@hotmail.com</li>
-</ul>
-</footer>
-</body>
+<footer>
+      <img src="../images/logo-cg.png" alt="logocg" class="footer-logo" />
+      <div class="div-footer">
+        <p class="footer-contacto"><b>Contacto</b></p>
+        <ul class="contact-list">
+          <li class="li-footer">
+            <img
+              class="footer-img"
+              src="../images/logo-direccion.jpg"
+              alt="logodireccion"
+            />
+            <p>Calle El Maestro N° 507</p>
+          </li>
+          <li class="li-footer">
+            <img
+              class="footer-img"
+              src="../images/logo-llamada.jpg"
+              alt="logollamada"
+            />
+            <p>3825-416367</p>
+          </li>
+          <li class="li-footer">
+            <img
+              class="footer-img"
+              src="../images/logo-correo.jpg"
+              alt="logocorreo"
+            />
+            <p>carola_g_15@hotmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
 </html>
