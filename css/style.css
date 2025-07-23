@@ -1,0 +1,39 @@
+
+body { background-color:rgb(225,226,236);
+color:black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px ;}
+
+header 
+{background-color: rgb(210, 211, 213);}
+
+.menu 
+{color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase; 
+  text-decoration: none;
+  font-weight: bold; }
+
+  .section-color1 {background-color: rgb(143, 162,201);}
+  .section-color2 {background-color: rgb(113, 143, 200) ;}
+  #section-color3 {background-color: rgb(135, 162, 196) ;}
+
+ul 
+{list-style-type: none; }
+
+
+
+  
+h1 
+{ text-transform: uppercase;}
+   
+h2 
+{ text-transform: capitalize;  }
+
+h3 
+{text-transform:capitalize;    }
+
+
+
+footer 
+{background-color:white;      }
