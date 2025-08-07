@@ -13,26 +13,18 @@ body {
   font-style: normal;
   font-size: 20px;
 }
-
-ul {
-  list-style-type: none;
-}
-
-h1 {
+body h1 {
   text-transform: uppercase;
 }
-
-h2 {
+body h2, body h3 {
   text-transform: capitalize;
 }
-
-h3 {
-  text-transform: capitalize;
-}
-
-p {
+body p {
   text-align: justify;
   word-spacing: -2px;
+}
+body ul {
+  list-style-type: none;
 }
 
 /*Mi sitio--------------------------------------------------------------------*/

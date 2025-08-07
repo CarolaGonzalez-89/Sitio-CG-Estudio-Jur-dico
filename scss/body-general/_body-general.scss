@@ -6,30 +6,28 @@
 
 /*general body*/
 
+$bgcolor-general: rgb(225, 226, 236);
+
 body {
-  background-color: rgb(225, 226, 236);
+  background-color: $bgcolor-general;
   color: black;
   font-family: "Courier New", Courier, monospace;
   font-style: normal;
   font-size: 20px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-h1 {
-  text-transform: uppercase;
-}
-
-h2 {
-  text-transform: capitalize;
-}
-
-h3 {
-  text-transform: capitalize;
-}
-p {
-  text-align: justify;
-  word-spacing: -2px;
+  h1 {
+    text-transform: uppercase;
+  }
+  h2 {
+    text-transform: capitalize;
+  }
+  h3 {
+    @extend h2;
+  }
+  p {
+    text-align: justify;
+    word-spacing: -2px;
+  }
+  ul {
+    list-style-type: none;
+  }
 }
