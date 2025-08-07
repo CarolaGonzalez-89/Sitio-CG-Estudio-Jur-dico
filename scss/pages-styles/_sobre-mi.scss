@@ -1,18 +1,56 @@
 /*sobre mi------------------------------------------------------------------*/
 
+.body-sobre-mi {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.main-sobre-mi {
+  margin-bottom: auto;
+}
+
 .justify {
   text-align: justify;
+}
+
+/*------------------Aplicacion de @Mixin----------------*/
+
+@mixin sobremi-base-flex($margin, $font-size) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $margin;
+  font-size: $font-size;
+}
+
+@mixin sobremi-base-grid($margin, $font-size) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "titulo-sub img"
+    "section-formacion section-formacion"
+    "section-metodologia section-metodologia"
+    "section-valores section-valores";
+  row-gap: 15px;
+  gap: 0, 75rem;
+  align-items: center;
+  margin: $margin;
+  font-size: $font-size;
+}
+
+@mixin section-base($padding, $margin, $bg-color) {
+  padding: $padding;
+  margin: $margin;
+  background-color: $bg-color;
 }
 
 /* Sobre mi - Para pantallas extra pequeñas <576px*/
 
 @media (max-width: 575.98px) {
   .container-sobremi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 16px;
-    margin: 10px;
+    @include sobremi-base-flex(10px, 16px);
   }
 
   .h1-sobremi {
@@ -24,18 +62,15 @@
   }
 
   .section-formacion {
-    background-color: rgb(143, 162, 201);
-    padding: 10px;
+    @include section-base(10px, 10px, rgb(143, 162, 201));
   }
 
   .section-metodologia {
-    background-color: rgb(113, 143, 200);
-    padding: 10px;
+    @include section-base(10px, 10px, rgb(113, 143, 200));
   }
 
   #section-valores {
-    background-color: rgb(135, 162, 196);
-    padding: 10px;
+    @include section-base(10px, 10px, rgb(135, 162, 196));
   }
 
   .img-mifoto {
@@ -49,19 +84,7 @@
 
 @media (min-width: 576px) and (max-width: 1023.98px) {
   .container-sobremi {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "titulo-sub img"
-      "section-formacion section-formacion"
-      "section-metodologia section-metodologia"
-      "section-valores section-valores";
-    margin: 20px;
-    row-gap: 15px;
-    gap: 0, 75rem;
-    align-items: center;
-    font-size: 18px;
+    @include sobremi-base-grid(20px, 18px);
   }
 
   .h1-sobremi {
@@ -75,21 +98,18 @@
   }
 
   .section-formacion {
-    background-color: rgb(143, 162, 201);
+    @include section-base(15px, 0, rgb(143, 162, 201));
     grid-area: section-formacion;
-    padding: 15px;
   }
 
   .section-metodologia {
-    background-color: rgb(113, 143, 200);
+    @include section-base(15px, 0, rgb(113, 143, 200));
     grid-area: section-metodologia;
-    padding: 15px;
   }
 
   #section-valores {
-    background-color: rgb(135, 162, 196);
+    @include section-base(15px, 0, rgb(135, 162, 196));
     grid-area: section-valores;
-    padding: 15px;
   }
 
   .img-mifoto {
@@ -104,19 +124,14 @@
 
 @media (min-width: 1024px) and (max-width: 1399.98px) {
   .container-sobremi {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-
+    @include sobremi-base-grid(30px, 20px);
     grid-template-areas:
       "titulo-sub titulo-sub"
       "section-formacion img"
       "section-metodologia img"
       "section-valores section-valores";
-    margin: 30px;
     row-gap: 20px;
     gap: 1rem;
-    align-items: center;
   }
 
   .h1-sobremi {
@@ -130,21 +145,18 @@
   }
 
   .section-formacion {
-    background-color: rgb(143, 162, 201);
+    @include section-base(30px, 0, rgb(143, 162, 201));
     grid-area: section-formacion;
-    padding: 30px;
   }
 
   .section-metodologia {
-    background-color: rgb(113, 143, 200);
+    @include section-base(20px, 0, rgb(113, 143, 200));
     grid-area: section-metodologia;
-    padding: 20px;
   }
 
   #section-valores {
-    background-color: rgb(135, 162, 196);
+    @include section-base(20px, 0, rgb(135, 162, 196));
     grid-area: section-valores;
-    padding: 20px;
   }
 
   .img-mifoto {
@@ -159,18 +171,13 @@
 
 @media (min-width: 1400px) {
   .container-sobremi {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    @include sobremi-base-grid(45px, 22px);
     grid-template-areas:
       "titulo-sub titulo-sub"
       "section-formacion img"
       "section-metodologia img"
       "section-valores section-valores";
-    margin: 45px;
     gap: 30px;
-    align-items: center;
-    font-size: 22px;
   }
 
   .h1-sobremi {
@@ -184,21 +191,18 @@
   }
 
   .section-formacion {
-    background-color: rgb(143, 162, 201);
+    @include section-base(45px, 0, rgb(143, 162, 201));
     grid-area: section-formacion;
-    padding: 45px;
   }
 
   .section-metodologia {
-    background-color: rgb(113, 143, 200);
+    @include section-base(35px, 0, rgb(113, 143, 200));
     grid-area: section-metodologia;
-    padding: 35px;
   }
 
   #section-valores {
-    background-color: rgb(135, 162, 196);
+    @include section-base(35px, 0, rgb(135, 162, 196));
     grid-area: section-valores;
-    padding: 35px;
   }
 
   .img-mifoto {
