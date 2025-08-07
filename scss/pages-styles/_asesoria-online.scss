@@ -1,0 +1,155 @@
+/*Asesoria----------------------------------------------------------*/
+
+.body-asesoria {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+.main-asesoria {
+  margin: auto;
+}
+
+/* Asesoria- Para pantallas extra pequeñas <576px*/
+
+@media (max-width: 575.98px) {
+  .main-asesoria {
+    font-size: 16px;
+    padding: 0 30px 0 30px;
+  }
+
+  .h1-asesoria {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .familia-asesoria {
+    margin-top: 30px;
+  }
+
+  .sucesorio-asesoria {
+    margin-top: 30px;
+  }
+
+  .consultas-asesoria {
+    display: flex;
+  }
+
+  .logo-asesoria {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+  }
+
+  .parrafo-consulta-asesoria {
+    margin: 30px 0 30px 30px;
+  }
+}
+
+/* Asesoria - Para pantallas intermedias ≥577px*/
+
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  .main-asesoria {
+    font-size: 18px;
+    padding: 0 30px 0 30px;
+  }
+
+  .h1-asesoria {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .familia-asesoria {
+    margin-top: 30px;
+  }
+
+  .sucesorio-asesoria {
+    margin-top: 30px;
+  }
+
+  .consultas-asesoria {
+    display: flex;
+  }
+
+  .logo-asesoria {
+    width: 60px;
+    height: auto;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .parrafo-consulta-asesoria {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Asesoria- Para pantallas grandes ≥1024 */
+
+@media (min-width: 1024px) and (max-width: 1399.98px) {
+  .main-asesoria {
+    padding: 0 30px 0 30px;
+  }
+
+  .h1-asesoria {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .familia-asesoria {
+    margin-top: 30px;
+  }
+
+  .sucesorio-asesoria {
+    margin-top: 30px;
+  }
+
+  .consultas-asesoria {
+    display: flex;
+  }
+
+  .logo-asesoria {
+    width: 60px;
+    height: auto;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .parrafo-consulta-asesoria {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Asesoria - Para pantallas extra grandes ≥1400 */
+
+@media (min-width: 1400px) {
+  .main-asesoria {
+    padding: 0 30px 0 30px;
+  }
+
+  .h1-asesoria {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .familia-asesoria {
+    margin-top: 30px;
+  }
+
+  .sucesorio-asesoria {
+    margin-top: 30px;
+  }
+
+  .consultas-asesoria {
+    display: flex;
+  }
+
+  .logo-asesoria {
+    width: 60px;
+    height: auto;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .parrafo-consulta-asesoria {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

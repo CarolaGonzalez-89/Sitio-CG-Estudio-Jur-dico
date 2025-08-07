@@ -1,0 +1,214 @@
+/*servicios------------------------------------------------------------------------------*/
+
+.body-servicios {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+.main-servicios {
+  margin: auto;
+}
+
+/* Servicios - Para pantallas extra pequeñas <576px*/
+
+@media (max-width: 575.98px) {
+  .h1-servicios {
+    margin: 30px 30px 0 30px;
+    text-decoration: underline;
+  }
+
+  .container-servicios-familia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px 50px 50px;
+  }
+
+  .parrafo-servicios-familia {
+    background-color: rgb(143, 162, 201);
+    padding: 25px 25px 20px 25px;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .img-servicios-familia {
+    width: 60%;
+    height: auto;
+    margin: 20px 0 20px 90px;
+  }
+
+  .img-servicios-balanza {
+    width: 40%;
+    height: auto;
+    margin: auto;
+  }
+
+  .container-servicios-sucesorio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-servicios-sucesorio {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  .parrafo-servicios-sucesorio {
+    background-color: rgb(143, 162, 201);
+    padding: 25px 35px 50px 35px;
+    margin: 30px 25px 50px 25px;
+    font-size: 16px;
+  }
+}
+
+/* Servicios- Para pantallas intermedias ≥577px*/
+
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  .h1-servicios {
+    margin: 30px 30px 0 30px;
+    text-decoration: underline;
+  }
+
+  .container-servicios-familia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px 50px 50px;
+  }
+
+  .parrafo-servicios-familia {
+    background-color: rgb(143, 162, 201);
+    padding: 40px 25px 20px 25px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .img-servicios-familia {
+    width: 90%;
+    height: 20%;
+    margin: 20px 0 20px 20px;
+  }
+
+  .img-servicios-balanza {
+    width: 25%;
+    height: 20%;
+    margin: auto;
+  }
+
+  .container-servicios-sucesorio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-servicios-sucesorio {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+  }
+  .parrafo-servicios-sucesorio {
+    background-color: rgb(143, 162, 201);
+    padding: 40px 35px 50px 35px;
+    font-size: 18px;
+    margin: 30px 25px 50px 25px;
+  }
+}
+
+/* Servicios- Para pantallas grandes ≥1024 */
+
+@media (min-width: 1024px) and (max-width: 1399.98px) {
+  .h1-servicios {
+    margin: 30px 30px 0 30px;
+    text-decoration: underline;
+  }
+
+  .container-servicios-familia {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 50px 50px;
+  }
+
+  .parrafo-servicios-familia {
+    background-color: rgb(143, 162, 201);
+    padding: 70px 25px 20px 25px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .img-servicios-familia {
+    width: 40%;
+    height: auto;
+    padding: 35px 25px 25px 45px;
+  }
+
+  .img-servicios-balanza {
+    width: 25%;
+    height: 20%;
+    padding: 150px 25px 70px 25px;
+  }
+
+  .container-servicios-sucesorio {
+    display: flex;
+  }
+
+  .img-servicios-sucesorio {
+    width: 400px;
+    height: auto;
+    padding: 20px 20px 45px 70px;
+  }
+  .parrafo-servicios-sucesorio {
+    background-color: rgb(143, 162, 201);
+    padding: 50px 35px 50px 35px;
+    font-size: 18px;
+    margin: 30px 25px 50px 25px;
+  }
+}
+
+/* Servicios- Para pantallas extra grandes ≥1400 */
+
+@media (min-width: 1400px) {
+  .h1-servicios {
+    margin: 30px 30px 0 30px;
+    text-decoration: underline;
+  }
+
+  .container-servicios-familia {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 50px 50px;
+  }
+
+  .parrafo-servicios-familia {
+    background-color: rgb(143, 162, 201);
+    padding: 50px 35px 50px 35px;
+
+    margin-top: 30px;
+  }
+
+  .img-servicios-familia {
+    width: 400px;
+    height: auto;
+    padding: 40px 25px 35px 45px;
+  }
+
+  .img-servicios-balanza {
+    width: 250px;
+    height: auto;
+    padding: 70px 25px 70px 25px;
+  }
+
+  .container-servicios-sucesorio {
+    display: flex;
+  }
+
+  .img-servicios-sucesorio {
+    width: 400px;
+    height: auto;
+    padding: 20px 20px 45px 70px;
+  }
+  .parrafo-servicios-sucesorio {
+    background-color: rgb(143, 162, 201);
+    padding: 50px 35px 50px 35px;
+
+    margin: 30px 25px 50px 25px;
+  }
+}

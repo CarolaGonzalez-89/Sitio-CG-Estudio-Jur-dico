@@ -1,0 +1,177 @@
+/*contacto-----------------------------------------------*/
+
+.body-contacto {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+.main-contacto {
+  margin-bottom: auto;
+}
+
+/* Contacto- Para pantallas extra pequeñas <576px*/
+
+@media (max-width: 575.98px) {
+  .main-contacto {
+    font-size: 16px;
+  }
+
+  .h1-contacto {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .h2-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .parrafo-lista-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .horario-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .horario-2 {
+    margin-bottom: 20px;
+  }
+
+  .img-contacto {
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+/* Contacto - Para pantallas intermedias ≥577px*/
+
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  .main-contacto {
+    font-size: 18px;
+  }
+
+  .h1-contacto {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .h2-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .parrafo-lista-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .horario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "horario1 horario2"
+      "imgcontacto imgcontacto";
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .horario-1 {
+    grid-area: horario1;
+  }
+  .horario-2 {
+    grid-area: horario2;
+  }
+
+  .img-contacto {
+    grid-area: imgcontacto;
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+/* Contacto - Para pantallas grandes ≥1024 */
+
+@media (min-width: 1024px) and (max-width: 1399.98px) {
+  .h1-contacto {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .h2-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .parrafo-lista-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .horario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "horario1 horario2"
+      "imgcontacto imgcontacto";
+    padding: 50px;
+    gap: 20px;
+  }
+
+  .horario-1 {
+    grid-area: horario1;
+  }
+  .horario-2 {
+    grid-area: horario2;
+  }
+
+  .img-contacto {
+    grid-area: imgcontacto;
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+/* Contacto - Para pantallas extra grandes ≥1400 */
+
+@media (min-width: 1400px) {
+  .h1-contacto {
+    margin: 30px 30px 30px 30px;
+    text-decoration: underline;
+  }
+
+  .h2-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .parrafo-lista-contacto {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .horario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "horario1 horario2"
+      "imgcontacto imgcontacto";
+    padding: 50px;
+    gap: 20px;
+  }
+
+  .horario-1 {
+    grid-area: horario1;
+  }
+  .horario-2 {
+    grid-area: horario2;
+  }
+
+  .img-contacto {
+    grid-area: imgcontacto;
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+}

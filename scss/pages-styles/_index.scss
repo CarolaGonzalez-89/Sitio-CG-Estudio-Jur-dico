@@ -1,0 +1,98 @@
+/*Mi sitio--------------------------------------------------------------------*/
+.body-index {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+.main-index {
+  margin-bottom: auto;
+}
+
+/* Mi sitio - Para pantallas extra pequeñas <576px*/
+
+@media (max-width: 575.98px) {
+  .h1-index {
+    margin: 20px 20px 15px 20px;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+
+  .h2-index {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  .p-index {
+    margin: 20px 20px 20px 20px;
+    font-size: 16px;
+  }
+
+  .img-index {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mi sitio - Para pantallas intermedias ≥577px*/
+
+@media (min-width: 576px) and (max-width: 1023.98px) {
+  .h1-index {
+    margin: 20px 20px 15px 20px;
+    text-decoration: underline;
+  }
+
+  .h2-index {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .p-index {
+    margin: 20px 20px 20px 20px;
+    font-size: 18px;
+  }
+
+  .img-index {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mi sitio - Para pantallas grandes ≥1024 */
+
+@media (min-width: 1024px) and (max-width: 1399.98px) {
+  .h1-index {
+    margin: 20px 20px 15px 20px;
+    text-decoration: underline;
+  }
+
+  .h2-index {
+    margin-left: 20px;
+  }
+  .p-index {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .img-index {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mi sitio - Para pantallas extra grandes ≥1400 */
+
+@media (min-width: 1400px) {
+  .h1-index {
+    margin: 20px 20px 15px 20px;
+    text-decoration: underline;
+  }
+
+  .h2-index {
+    margin-left: 20px;
+  }
+  .p-index {
+    margin: 20px 20px 20px 20px;
+  }
+
+  .img-index {
+    width: 100%;
+    height: auto;
+  }
+}

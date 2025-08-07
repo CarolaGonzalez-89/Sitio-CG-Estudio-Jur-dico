@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*general body*/
+
+body {
+  background-color: rgb(225, 226, 236);
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+p {
+  text-align: justify;
+  word-spacing: -2px;
+}
