@@ -452,6 +452,7 @@ body ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 50px 50px 50px;
   }
   .parrafo-servicios-familia {
@@ -463,12 +464,17 @@ body ul {
   .img-servicios-familia {
     width: 60%;
     height: auto;
-    margin: 20px 0 20px 90px;
+    margin: auto;
+    padding-bottom: 40px;
   }
   .img-servicios-balanza {
     width: 40%;
     height: auto;
     margin: auto;
+    transition: background 2s linear;
+  }
+  .img-servicios-balanza:hover {
+    background-color: rgb(165, 167, 172);
   }
   .container-servicios-sucesorio {
     display: flex;
@@ -496,6 +502,7 @@ body ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 50px 50px 50px;
   }
   .parrafo-servicios-familia {
@@ -512,7 +519,10 @@ body ul {
   .img-servicios-balanza {
     width: 25%;
     height: 20%;
-    margin: auto;
+    transition: background 2s linear;
+  }
+  .img-servicios-balanza:hover {
+    background-color: rgb(165, 167, 172);
   }
   .container-servicios-sucesorio {
     display: flex;
@@ -539,6 +549,7 @@ body ul {
   .container-servicios-familia {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 50px 50px 50px;
   }
   .parrafo-servicios-familia {
@@ -555,7 +566,10 @@ body ul {
   .img-servicios-balanza {
     width: 25%;
     height: 20%;
-    padding: 150px 25px 70px 25px;
+    transition: background 2s linear;
+  }
+  .img-servicios-balanza:hover {
+    background-color: rgb(165, 167, 172);
   }
   .container-servicios-sucesorio {
     display: flex;
@@ -581,6 +595,7 @@ body ul {
   .container-servicios-familia {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 50px 50px 50px;
   }
   .parrafo-servicios-familia {
@@ -594,9 +609,12 @@ body ul {
     padding: 40px 25px 35px 45px;
   }
   .img-servicios-balanza {
-    width: 250px;
-    height: auto;
-    padding: 70px 25px 70px 25px;
+    width: 300px;
+    height: 200px;
+    transition: background 2s linear;
+  }
+  .img-servicios-balanza:hover {
+    background-color: rgb(165, 167, 172);
   }
   .container-servicios-sucesorio {
     display: flex;
