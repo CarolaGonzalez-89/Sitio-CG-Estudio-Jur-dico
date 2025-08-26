@@ -808,7 +808,7 @@ body ul {
     animation: scale 6s infinite;
   }
   .nav-container {
-    margin: auto;
+    margin-left: auto;
     background-color: rgb(210, 211, 213);
     width: 30%;
   }
@@ -843,9 +843,9 @@ body ul {
     animation: scale 6s infinite;
   }
   .nav-container {
-    margin: auto;
+    margin-left: auto;
     background-color: rgb(210, 211, 213);
-    width: 40%;
+    width: 30%;
   }
   .boton-background {
     background-color: white;
